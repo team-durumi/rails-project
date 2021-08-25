@@ -4,14 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Create test-project",
+            "label": "Create project",
             "type": "shell",
-            "command": "rails new test-project -G --skip -d postgresql && cd test-project && cp ../.vscode/database.yml config && rake db:create"
-        }, 
-        {
-            "label": "Delete test-project",
-            "type": "shell",
-            "command": "cd test-project && rm -rf * && rm -f .ruby-version .browserslistrc"
-        }, 
+            "command": "rails new ./ -G --skip -d postgresql && cd project && cp ../.vscode/database.yml config && rake db:create"
+        },
     ],
 }
